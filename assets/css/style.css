@@ -1,0 +1,154 @@
+html,body{
+    overflow-x: hidden;
+}
+
+#vantajs{
+	padding-top: 150px;
+	padding-bottom: 100px;
+
+
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 383px;
+	height: 333px;
+	perspective: 1000px;
+	margin-bottom: 50px;
+
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.flip-card:hover .flip-card-inner{
+	transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-card-front {
+	background-color: #2C3E50;
+	color: black;
+}
+.flip-card-back {
+	background-color: #2C3E50;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.ed_head {
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.25px;
+	padding: 60px 20px 10px;
+	font-weight: 600;
+}
+.ed_date {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 17px;
+	letter-spacing: 0.25px;
+	padding-bottom: 24px;
+}
+
+b {
+	font-weight: 600;
+	font-size: 30px;
+}
+.ed_body {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.25px;
+	padding-left: 24px;
+	padding-right: 24px;
+	opacity: 0.8;
+}
+
+.card-link {
+	text-decoration: none;
+	color: #010721;
+	font-weight: 600;
+	border: 1px solid #010721;
+	padding: 4px 6px;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: rgb(101,81,222);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 5s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+.link {
+	text-decoration: none;
+	color: #010721;
+	font-weight: 600;
+	border: 1px solid #010721;
+	padding: 4px 6px;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+
+.link2 {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	border: 1px solid #fff;
+	padding: 4px 6px;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+iframe{
+border:7px solid #313437;
+}
+
